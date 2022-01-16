@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Ticket form</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="submit.html">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John Johnson" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com" required>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Vilnius">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">Street address</label>
+                                <input type="text" id="street adress" name="street adress" placeholder="Rotušės g. 4" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Postal code</label>
+                                <input type="text" id="postal code" name="postal code" placeholder="31518" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John Johnson" required>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="ticket" style="color:black"><i class="fa fa-shopping-cart"></i> </span></h4>
+            <label for="ticket1">1 Ticket <span class="price">50€</span></label>
+            <input id="ticket1" type="radio" name="ticket" value="1" required><br><br>
+            <hr>
+            <label for="ticket2">2 Tickets <span class="price">100€</span></label>
+            <input id="ticket2" type="radio" name="ticket" value="2" required><br><br>
+            <hr>
+            <label for="ticket3">3 Tickets <span class="price">150€</span></label>
+            <input id="ticket3" type="radio" name="ticket" value="3" required><br><br>
+            <hr>
+            <label for="ticket4">4 Tickets <span class="price">200€</span></label>
+            <input id="ticket4" type="radio" name="ticket" value="4" required><br><br>
+        </div>
+    </div>
+</div>
+</body>
+</html>
